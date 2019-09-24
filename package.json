@@ -4,8 +4,7 @@
   "description": "Team EOS Classroom App",
   "main": "app.js",
   "scripts": {
-     "test": "npm install express mocha chai",
-     "win": "mocha",
+     "test": "mocha",
      "start": "node app.js"
   },
   "author": "Emex",
