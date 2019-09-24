@@ -17,17 +17,17 @@ var courseRoutes = require("./routes/courses");
 var indexRoutes      = require("./routes/index");
 
 
-console.log("this is the process env: " + process.env.CLASSROOMDATABASEURL) //mongodb://localhost:27017/classroom
-mongoose.connect(process.env.CLASSROOMDATABASEURL, {useNewUrlParser: true}, function(err){
-    if(err){
-        console.log(err);
-    } 
-});
-// mongoose.connect('mongodb://localhost:27017/classroom', {useNewUrlParser: true}, function(err){
+// console.log("this is the process env: " + process.env.CLASSROOMDATABASEURL) //mongodb://localhost:27017/classroom
+// mongoose.connect(process.env.CLASSROOMDATABASEURL, {useNewUrlParser: true}, function(err){
 //     if(err){
 //         console.log(err);
 //     } 
 // });
+mongoose.connect('mongodb+srv://emeka:08033207842@cluster0-xf3en.mongodb.net/classroom?retryWrites=true&w=majority', {useNewUrlParser: true}, function(err){
+    if(err){
+        console.log(err);
+    } 
+});
 
 app.use(bodyParser.urlencoded({extended: true})) 
 app.set("view engine", "ejs");
