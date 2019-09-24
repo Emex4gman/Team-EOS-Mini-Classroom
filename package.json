@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
      "test": "npm install express mocha chai",
+     "win": "mocha",
      "start": "node app.js"
   },
   "author": "Emex",
