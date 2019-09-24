@@ -4,7 +4,7 @@
   "description": "Team EOS Classroom App",
   "main": "app.js",
   "scripts": {
-    "test": "echo 'hello word'",
+    "test": "echo 'Test complete'",
     "deploy":"node app.js",
      "start": "node app.js"
   },
