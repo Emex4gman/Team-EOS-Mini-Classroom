@@ -4,7 +4,8 @@
   "description": "Team EOS Classroom App",
   "main": "app.js",
   "scripts": {
-    "test": "npm install",
+    "test": "echo 'hello word'",
+    "deploy":"node app.js",
      "start": "node app.js"
   },
   "author": "Emex",
